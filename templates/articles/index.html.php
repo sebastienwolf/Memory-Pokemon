@@ -7,7 +7,7 @@
         <?php
         foreach ($tableau as $item) {
         ?>
-            <img id="<?= $item ?>" src='./upload/fondCarte.jpg'>
+            <img class="card" id="<?= $item ?>" src='./upload/fondCarte.jpg'>
         <?php } ?>
     </div>
 
@@ -17,19 +17,19 @@
 
 
 </section>
-<p>*pour sauvegarder votre score vous devez être inscrit.</p>
 <aside>
-    <h3>top 10</h3>
+    <h3>Top 10</h3>
     <?php
     foreach ($result as $top) {
     ?>
-        <p><?= $top['pseudo'] ?> le <?= $top['dateE'] ?> pour un score de <?= $top['score'] ?> click.</p>
+        <p><?= $top['pseudo'] ?> le <?= $top['dateE'] ?> pour un score de <?= $top['score'] ?> clicks.</p>
 
     <?php } ?>
+    <p>*pour sauvegarder votre score, vous devez être inscrit.</p>
+
 </aside>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        debugger
 
         let arrayOfImage = <?php echo json_encode($arrayCards); ?>;
         let firstFlip = '';
@@ -37,7 +37,7 @@
         let playAgain = document.getElementById('restart')
         playAgain.style.display = 'none'
 
-        Array.from(document.getElementsByTagName('img')).forEach(card => {
+        Array.from(document.getElementsByClassName('card')).forEach(card => {
             card.addEventListener('click', () => {
                 flipCard(card)
             })

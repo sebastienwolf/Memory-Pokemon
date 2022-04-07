@@ -274,6 +274,7 @@ main .game div img {
   height: 120px;
   margin-bottom: 20px;
   cursor: pointer;
+  border: none;
 }
 
 main .game #centered {
@@ -328,5 +329,47 @@ main .game #centered .bn634-hover.bn27 {
   background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
   -webkit-box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
           box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+footer {
+  margin-top: 50px;
+  margin-right: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto";
+}
+
+footer a {
+  text-decoration: none;
+  color: #2F2E2E;
+  padding: 6px 10px;
+  border: #8b8585 1px solid;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 10px 5px 5px #8b8585;
+          box-shadow: 10px 5px 5px #8b8585;
+}
+
+footer a svg {
+  height: 20px;
+  width: 20px;
+}
+
+footer a:hover {
+  border: 1px solid #ad2626;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 10px 10px #5394e9;
+          box-shadow: 0 10px 10px #5394e9;
+  border: #8b8585 1px solid;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@
         <div>
             <form id="form" action="" method="post">
                 <input type="text" name="userPseudo" placeholder="Pseudo">
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Mot de passe">
         </div>
         <div>
             <button type="submit" class="creer bn633-hover bn26" name="creer">Créer</button>

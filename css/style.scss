@@ -317,6 +317,7 @@ main {
                 height: 120px;
                 margin-bottom: 20px;
                 cursor: pointer;
+                border: none;
 
             }
 
@@ -377,16 +378,46 @@ main {
     }
 
 
+}
+
+//=============================================================
+//===================== footer =================================
+//=============================================================
+
+footer {
+    margin-top: 50px;
+    margin-right: 25%;
+    display: flex;
+    justify-content: space-around;
+    // background: $color1;
+    height: 50px;
+    align-items: center;
+    font-family: "Roboto";
+
+    a {
+        text-decoration: none;
+        color: $color4;
+        //background: $color3;
+        padding: 6px 10px;
+        border: $color7 1px solid;
+        cursor: pointer;
+        width: 100%;
+        transition: 0.5s;
+        box-shadow: 10px 5px 5px $color7;
 
 
 
 
+        svg {
+            height: 20px;
+            width: 20px;
+        }
+    }
 
-
-
-
-
-
-
-
+    a:hover {
+        border: 1px solid $color2;
+        transform: translateY(-8px);
+        box-shadow: 0 10px 10px $color3;
+        border: $color7 1px solid;
+    }
 }
