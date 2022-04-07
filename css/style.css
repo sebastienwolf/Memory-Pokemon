@@ -1,0 +1,332 @@
+@font-face {
+  font-family: 'futura';
+  src: url("./police/Futura-Light.otf") format("opentype");
+}
+
+* {
+  font-family: "futura";
+}
+
+.tete {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5394e9;
+}
+
+.tete img {
+  margin-left: 10px;
+  background: #5394e9;
+}
+
+.tete ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.tete ul li {
+  list-style: none;
+}
+
+.tete ul li svg {
+  color: #fcf801d3;
+}
+
+.tete ul li a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #fcf801d3;
+}
+
+.a {
+  text-decoration: none;
+  color: #fcf801d3;
+}
+
+.bn632-hover {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 200;
+  color: #fcf801d3;
+  cursor: pointer;
+  margin: 10px;
+  height: 20px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover a {
+  text-decoration: none;
+  color: #F8F9F7;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn25 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29323c), color-stop(#485563), color-stop(#2b5876), to(#4e4376));
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.bn633-hover {
+  font-size: 14px;
+  font-weight: 200;
+  color: #fcf801d3;
+  cursor: pointer;
+  margin: 10px;
+  height: 20px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn633-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn633-hover:focus {
+  outline: none;
+}
+
+.bn633-hover.bn26 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29323c), color-stop(#485563), color-stop(#2b5876), to(#4e4376));
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+main .formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+main .formulaire h2 {
+  font-weight: 900;
+}
+
+main .formulaire div button {
+  color: #fcf801d3;
+}
+
+main .formulaire div button a {
+  text-decoration: none;
+  color: #fcf801d3;
+}
+
+main .formUsers {
+  border: 1px solid black;
+  border-radius: 15px;
+  position: relative;
+  top: -550px;
+  left: 100px;
+  width: 0;
+  height: 0;
+  background: white;
+  margin: 25%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+main .formUsers.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  width: 400px;
+  height: 320px;
+  visibility: visible;
+}
+
+main .formUsers form {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+main .formUsers form button {
+  margin-top: 20px;
+}
+
+main .formUsers form #retour {
+  position: relative;
+  top: 5px;
+}
+
+main aside {
+  position: absolute;
+  padding-left: 20px;
+  top: 200px;
+  right: 0px;
+  width: 400px;
+  height: 100%;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+main aside h3 {
+  margin-top: 20px;
+}
+
+main .MyResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 25%;
+  margin-top: 20px;
+}
+
+main .game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .game h1 {
+  color: #000000;
+}
+
+main .game .terrain {
+  width: 500px;
+  margin-left: 20%;
+}
+
+main .game div {
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .game div img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+main .game #centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .game #centered .bn634-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 800;
+  width: 200px;
+  font-size: 14px;
+  font-weight: 200;
+  color: #fcf801d3;
+  cursor: pointer;
+  margin: 10px;
+  height: 60px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+main .game #centered .bn634-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+main .game #centered .bn634-hover:focus {
+  outline: none;
+}
+
+main .game #centered .bn634-hover.bn27 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29323c), color-stop(#485563), color-stop(#2b5876), to(#4e4376));
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+/*# sourceMappingURL=style.css.map */

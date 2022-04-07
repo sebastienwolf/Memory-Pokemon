@@ -1,0 +1,392 @@
+$color1: #F8F9F7;
+$color2: #ad2626;
+$color3: #5394e9;
+$color4: #2F2E2E;
+$color5: #fcf801d3;
+$color6: #d3e0d3;
+$color7: #8b8585;
+$color9: #000000;
+$white : #ffffff;
+
+
+@font-face {
+    font-family: 'futura';
+    src: url('./police/Futura-Light.otf') format('opentype');
+}
+
+* {
+    font-family: "futura";
+
+}
+
+//=============================================================
+//===================== header =================================
+//=============================================================
+.tete {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // z-index: 5;
+    background: $color3;
+
+
+
+
+    img {
+        margin-left: 10px;
+        background: $color3;
+    }
+
+
+
+
+    ul {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+
+        li {
+            list-style: none;
+
+            svg {
+                color: $color5;
+
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: 900;
+                color: $color5;
+            }
+        }
+    }
+
+
+
+
+
+}
+
+
+//=============================================================
+//===================== bouton =================================
+//=============================================================
+.a {
+    text-decoration: none;
+    color: $color5;
+}
+
+.bn632-hover {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 200;
+    color: $color5;
+    cursor: pointer;
+    margin: 10px;
+    height: 20px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    a {
+        text-decoration: none;
+        color: $color1;
+    }
+
+}
+
+.bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+    outline: none;
+}
+
+.bn632-hover.bn25 {
+    background-image: linear-gradient(to right,
+            #29323c,
+            #485563,
+            #2b5876,
+            #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+//=============================================================
+//===================== bouton form============================
+//=============================================================
+
+
+.bn633-hover {
+    font-size: 14px;
+    font-weight: 200;
+    color: $color5;
+    cursor: pointer;
+    margin: 10px;
+    height: 20px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+
+}
+
+.bn633-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.bn633-hover:focus {
+    outline: none;
+}
+
+.bn633-hover.bn26 {
+    background-image: linear-gradient(to right,
+            #29323c,
+            #485563,
+            #2b5876,
+            #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+
+}
+
+
+
+//=============================================================
+//===================== main =================================
+//=============================================================
+main {
+
+
+    //=============================================================
+    //===================== form     ==============================
+    //=============================================================
+    .formulaire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        h2 {
+            font-weight: 900;
+        }
+
+        div {
+            button {
+                color: $color5;
+
+                a {
+                    text-decoration: none;
+                    color: $color5;
+                }
+            }
+        }
+    }
+
+    //=============================================================
+    //===================== formulaire pop modif user =============
+    //=============================================================
+    // ============================================================
+
+    // apparition pop profil modif
+    .formUsers {
+        border: 1px solid black;
+        border-radius: 15px;
+        position: relative;
+        top: -550px;
+        left: 100px;
+        width: 0;
+        height: 0;
+        background: white;
+        margin: 25%;
+        transform: scale(0);
+        opacity: 0;
+        transition: 0.5s;
+        visibility: hidden;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        &.active {
+            transform: scale(1);
+            opacity: 1;
+            width: 400px;
+            height: 320px;
+            visibility: visible;
+        }
+
+
+
+        form {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+
+            button {
+                margin-top: 20px;
+            }
+
+            #retour {
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+
+
+    //=============================================================
+    //===================== aside =================================
+    //=============================================================
+
+    aside {
+        position: absolute;
+        padding-left: 20px;
+        top: 200px;
+        right: 0px;
+        width: 400px;
+        height: 100%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        h3 {
+            margin-top: 20px;
+        }
+
+    }
+
+    //=============================================================
+    //===================== myParti =================================
+    //=============================================================
+    .MyResult {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 25%;
+        margin-top: 20px;
+
+    }
+
+    //=============================================================
+    //===================== Game =================================
+    //=============================================================
+
+    .game {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+
+        h1 {
+            color: $color9;
+
+        }
+
+        .terrain {
+            width: 500px;
+            margin-left: 20%;
+        }
+
+        div {
+            margin-top: 50px;
+            margin-left: 10%;
+            margin-right: 40%;
+            display: flex;
+            flex-wrap: wrap;
+
+            img {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 20px;
+                cursor: pointer;
+
+            }
+
+        }
+
+        #centered {
+            display: flex;
+            justify-content: center;
+
+            //==========================
+            .bn634-hover {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 800;
+                width: 200px;
+                font-size: 14px;
+                font-weight: 200;
+                color: $color5;
+                cursor: pointer;
+                margin: 10px;
+                height: 60px;
+                text-align: center;
+                border: none;
+                background-size: 300% 100%;
+                border-radius: 50px;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+
+            }
+
+            .bn634-hover:hover {
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+
+            .bn634-hover:focus {
+                outline: none;
+            }
+
+            .bn634-hover.bn27 {
+                background-image: linear-gradient(to right,
+                        #29323c,
+                        #485563,
+                        #2b5876,
+                        #4e4376);
+                box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+            }
+
+            //===============================
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
